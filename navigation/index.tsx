@@ -28,12 +28,17 @@ import OtpScreen from '../screens/OtpScreen'
 import SignupSecondScreen from '../screens/SignupSecondScreen'
 import SignupThirdScreen from '../screens/SignupThirdScreen'
 import LoadingScreen from '../screens/LoadingScreen';
+import SettingsScreen from '../screens/SettingsScreen'
+
+
 export default function Navigation({ colorScheme, viewedOnboarding }) {
   return (
     <NavigationContainer
       linking={LinkingConfiguration}
       theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <RootNavigator viewedOnboarding={viewedOnboarding}/>
+          <RootNavigator viewedOnboarding={viewedOnboarding}/>
+
+
     </NavigationContainer>
   );
 }
@@ -96,6 +101,7 @@ function RootNavigator({ viewedOnboarding }) {
       )}
 
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
+      <Stack.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

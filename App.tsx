@@ -13,7 +13,7 @@ import LoaderScreen from './screens/LoaderScreen'
     LogBox.ignoreLogs(['Animated: `useNativeDriver`','componentWillReceiveProps']);
     const _console = _.clone(console);
     console.warn = message => {
-    if (message.indexOf('componentWillReceiveProps') <= -1) {
+    if (message.indexOf('componentWillReceiveProps') <= -2) {
      _console.warn(message);
     }
    };
@@ -59,13 +59,11 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
-         {loading ? (
-            <LoaderScreen />
-          ) : (
+
         <Context.Provider value={userContext}>
         <Navigation colorScheme={colorScheme} viewedOnboarding={viewedOnboarding}/>
         <StatusBar />
-        </Context.Provider>)}
+        </Context.Provider>
       </SafeAreaProvider>
     );
   }

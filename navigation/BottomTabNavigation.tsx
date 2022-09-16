@@ -148,7 +148,7 @@ export default function BottomTabNavigator({navigation}) {
 
         </View>
 
-        <Text style={styles.text1}>Welcome, Uche ThankGod</Text>
+        <Text style={styles.text1}>Welcome, Ikhanoba Michael-Shaka</Text>
 
       </View>
       <Tab.Navigator
@@ -157,8 +157,6 @@ export default function BottomTabNavigator({navigation}) {
       tabBarInactiveTintColor: 'black',
       tabBarStyle: {
         shadowColor: "#fff",
-            shadowOffset: { width: 0, height: 0 }, // change this for more shadow
-            shadowOpacity: 0
       },
       tabBarItemStyle: {},
       tabBarIndicatorContainerStyle:{
@@ -172,7 +170,7 @@ export default function BottomTabNavigator({navigation}) {
       },
       tabBarIndicatorStyle:{
         height: 24,
-        marginLeft: "5%",
+        marginLeft: "11%",
         marginBottom: "1.6%",
         width: "20%",
                 backgroundColor: 'white',
@@ -193,11 +191,6 @@ export default function BottomTabNavigator({navigation}) {
         name={"Records"}
         component={RecordsScreen}
         options={{ tabBarLabel: "Records"}}
-      />
-      <Tab.Screen
-        name={"Screen3"}
-        component={HomeScreen}
-        options={{ tabBarLabel: "Timetable"}}
       />
     </Tab.Navigator>
     </SafeAreaView>

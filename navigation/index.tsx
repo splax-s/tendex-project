@@ -29,6 +29,10 @@ import SignupSecondScreen from '../screens/SignupSecondScreen'
 import SignupThirdScreen from '../screens/SignupThirdScreen'
 import LoadingScreen from '../screens/LoadingScreen';
 import SettingsScreen from '../screens/SettingsScreen'
+import ClockInScreen from '../screens/ClockInScreen'
+import SuccessScreen from '../screens/SuccessScreen'
+import ExcusalScreen from '../screens/ExcusalScreen'
+import AnnouncementScreen from '../screens/AnnouncementScreen'
 
 
 export default function Navigation({ colorScheme, viewedOnboarding }) {
@@ -102,6 +106,10 @@ function RootNavigator({ viewedOnboarding }) {
 
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="ClockIn" component={ClockInScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Success" component={SuccessScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Excusal" component={ExcusalScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Announcements" component={AnnouncementScreen} options={{headerShown: false}}/>
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

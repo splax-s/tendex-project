@@ -10,7 +10,7 @@ import { LogBox } from 'react-native';
 import LoaderScreen from './screens/LoaderScreen'
     import _ from 'lodash';
 
-    LogBox.ignoreLogs(['Animated: `useNativeDriver`','componentWillReceiveProps']);
+    LogBox.ignoreLogs(['Animated: `useNativeDriver`','componentWillReceiveProps', 'Sending']);
     const _console = _.clone(console);
     console.warn = message => {
     if (message.indexOf('componentWillReceiveProps') <= -2) {

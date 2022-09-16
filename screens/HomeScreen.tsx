@@ -2,11 +2,15 @@ import { KeyboardAvoidingView, StyleSheet, Text, TouchableWithoutFeedback, View,
 import React,{useState, useEffect, useRef} from 'react'
 import {SafeAreaView} from 'react-native-safe-area-context'
 import CustomButton2 from '../components/CustomButton2'
+import home from '../data/home'
+import HomeItem from '../components/HomeItem'
+import {FlatList} from 'react-native-gesture-handler'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
+  const[isVisible, setIsVisible] = React.useState(false);
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.second}>
+    <View style={styles.container}>
+      {/* <View style={styles.second}>
         <Image source={require('../assets/images/searchIcon.png')} style={styles.icon}/>
         <Text style={styles.text}>No course is added yet</Text>
       </View>
@@ -19,8 +23,22 @@ const HomeScreen = () => {
                     textStyle={{color: 'white'}}
                     disabled={false}
                     containerStyle={{}}
-                  />
-    </SafeAreaView>
+                  /> */}
+                  <FlatList
+                    data={home}
+                    pagingEnabled={false}
+                    showsHorizontalScrollIndicator= {false}
+                    showsVerticalScrollIndicator= {false}
+                    directionalLockEnabled
+                    refreshing={false}
+                    onRefresh={()=>{}}
+                    keyExtractor={item => item.id}
+                    numColumns={2}
+                    renderItem={({item}) => (
+                        <HomeItem item={item} navigation={navigation}/>
+                      )}
+                    />
+    </View>
   )
 }
 
@@ -30,8 +48,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   icon:{
 

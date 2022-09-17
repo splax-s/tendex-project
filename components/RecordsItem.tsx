@@ -49,7 +49,7 @@ const RecordsItem = ({item}) => {
                     </View>
                     <View style={{flexDirection: 'row',alignItems: 'center',marginLeft: 10}}>
                     <View style={{height: 10, width: 10, backgroundColor: 'rgba(219, 54, 43, 1)', borderRadius: 50, marginRight: 5}}/>
-                    <Text style={styles.present}>{details.absent} Present</Text>
+                    <Text style={styles.present}>{details.absent} Absent</Text>
                     </View>
 
                 </View>

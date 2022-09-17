@@ -96,7 +96,7 @@ const ExcusalScreen = ({navigation, route}) => {
       <CustomTextInput
                       value={reason}
                       style={{ marginBottom: 20, width: "100%" }}
-                      label="Level"
+                      label="Reason"
                       placeholder={reason}
                       onSubmitEditing={() => {
                         // confirmPasswordRef.current.focus();
@@ -113,7 +113,7 @@ const ExcusalScreen = ({navigation, route}) => {
                     />
                     <CustomTextInput1
                     value={message1}
-                    label="Matric"
+                    label="Message"
                     onChangeText={setMessage1}
                     placeholder=""
                     onSubmitEditing={Keyboard.dismiss}

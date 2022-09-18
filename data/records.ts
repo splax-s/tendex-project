@@ -1,3 +1,5 @@
+import splax from './announcement'
+console.log(splax)
 export default [
     {
         id: "1",
@@ -26,7 +28,7 @@ export default [
         courseCode: "COSC 415",
         courseName: "Malware Analysis",
         lecturerName: "Dr. Ernest Onuiri",
-        progress: 40,
+        progress: 20,
         present: 5,
         absent: 11,
         totalSessions: '20',
@@ -48,9 +50,9 @@ export default [
         courseCode: "COSC 449",
         courseName: "Huawei Routing and Switching",
         lecturerName: "Dr. Idowu Kelvin",
-        progress: 90,
-        present: 16,
-        absent: 2,
+        progress: 100,
+        present: 20,
+        absent: 0,
         totalSessions: '20',
         image: require('../assets/images/lec-profile.png')
     },

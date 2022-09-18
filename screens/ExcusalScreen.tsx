@@ -40,6 +40,8 @@ const ExcusalScreen = ({navigation, route}) => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
+            setMessage1('')
+            setReason('')
             Toast.show({
                 type: 'success',
                 text1: 'Excusal sent successfully',

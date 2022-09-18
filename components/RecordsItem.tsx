@@ -32,6 +32,7 @@ const RecordsItem = ({item}) => {
                 progressValueStyle={{ fontFamily: 'quicksand-medium' }}
                 strokeColorConfig={[
                     { color: 'red', value: 0 },
+                    { color: 'red', value: 20 },
                     {color: '#F3A712', value: 30 },
                     { color: 'rgba(83, 77, 65, 1)', value: 50 },
                     {color: 'rgba(41, 51, 92, 1)', value: 70},

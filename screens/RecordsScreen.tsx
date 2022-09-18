@@ -18,6 +18,7 @@ const RecordsScreen = () => {
     directionalLockEnabled
     refreshing={false}
     onRefresh={()=>{}}
+    contentContainerStyle={{paddingBottom: 20}}
     keyExtractor={item => item.id}
     renderItem={({item}) => (
         <RecordsItem item={item}/>

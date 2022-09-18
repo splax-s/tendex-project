@@ -73,7 +73,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 27,
         paddingVertical: 15,
         marginTop: 10,
-        marginBottom: 15,
       },
       separator:{
         flexDirection: 'row',

@@ -1,10 +1,10 @@
-import { KeyboardAvoidingView, StyleSheet, Text, TouchableWithoutFeedback, View, Image } from 'react-native'
+import { KeyboardAvoidingView, StyleSheet, Dimensions, Text, TouchableWithoutFeedback, View, Image } from 'react-native'
 import React,{useState, useEffect, useRef} from 'react'
 import {SafeAreaView} from 'react-native-safe-area-context'
 import CustomButton2 from '../components/CustomButton2'
 import home from '../data/home'
 import HomeItem from '../components/HomeItem'
-import {FlatList} from 'react-native-gesture-handler'
+import {FlatList} from 'react-native'
 
 const HomeScreen = ({navigation}) => {
   const[isVisible, setIsVisible] = React.useState(false);

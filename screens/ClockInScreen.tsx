@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Keyboard, KeyboardAvoidingView, TouchableOpacity, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View, Keyboard, KeyboardAvoidingView, TouchableOpacity, ImageBackground, ScrollView } from 'react-native'
 import React,{useState, useEffect, useRef} from 'react'
 import {SafeAreaView} from 'react-native-safe-area-context'
 import Colors from '../constants/Colors'
@@ -35,6 +35,7 @@ const ClockInScreen = ({navigation, route}) => {
 
   return (
     <SafeAreaView style={styles.container}>
+       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{
             flexDirection: "row",
             paddingBottom: 20,
@@ -122,6 +123,7 @@ const ClockInScreen = ({navigation, route}) => {
                 <Up/>
             </TouchableOpacity>
       </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }

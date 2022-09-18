@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         color :  Colors.warning,
         fontFamily : 'quicksand-medium',
         fontSize : 12,
-        paddingTop : 15,
+        paddingTop : 10,
         paddingLeft : 5
     }
 });

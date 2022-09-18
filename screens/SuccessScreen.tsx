@@ -17,7 +17,7 @@ const SuccessScreen = ({navigation}) => {
                         navigation.replace('Root');
                     }}
                     title="Return Home"
-                    marginTop={130}
+                    marginTop={110}
                     loading={false}
                     textStyle={{color: 'white'}}
                     disabled={false}

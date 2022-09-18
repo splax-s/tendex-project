@@ -4,6 +4,7 @@ import React, {useState, useEffect,} from 'react'
 const HomeItem = ({item, navigation}) => {
     const [onGoing, setOnGoing] = useState(item.onGoing)
   return (
+    <View style={{flex: 1}}>
     <TouchableOpacity style={styles.container} onPress={()=>{
         navigation.navigate('ClockIn', {name: item.courseCode, message: item.announcements, image: item.image, lecturer: item.lecturerName, title: item.courseName, hall: item.hall, time: item.time, student: item.studentCount})}}>
         <ImageBackground source={item.image} style={styles.image} imageStyle={{ borderRadius: 10}}>
@@ -20,6 +21,7 @@ const HomeItem = ({item, navigation}) => {
         </View>
         </ImageBackground>
     </TouchableOpacity>
+    </View>
   )
 }
 

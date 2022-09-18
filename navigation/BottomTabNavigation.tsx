@@ -28,7 +28,12 @@ export default function BottomTabNavigator({navigation}) {
   const[isSideMenuVisible, setIsSideMenuVisible] = React.useState(false);
   const [initialScreen, setInitialScreen] = React.useState('Courses')
   const [searchQuery, setSearchQuery] = React.useState('');
-  const onChangeSearch = query => setSearchQuery(query);
+  const [fullData, setFullData] = React.useState([]);
+  const onChangeSearch = query => {
+
+    const formattedQuery =query.toLowerCase();
+    setSearchQuery(query)
+  };
   const splax = moment().format('Do MMMM, YYYY');
 
   const why = ()=> {setIsSideMenuVisible(false)}
@@ -158,7 +163,6 @@ export default function BottomTabNavigator({navigation}) {
       tabBarStyle: {
         shadowColor: "#fff",
       },
-      tabBarItemStyle: {},
       tabBarIndicatorContainerStyle:{
         height: 44,
         backgroundColor: '#FBF7F7',

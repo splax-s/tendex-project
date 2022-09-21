@@ -80,10 +80,12 @@ const OnBoardingScreen = ({navigation}) => {
     const offset = nextSlideIndex*width
     ref?.current?.scrollToOffset({offset})
     setIncreaseProgress(increaseProgress + 50)
-
+    if (increaseProgress == 100){
+      navigation.replace('AuthOptions')
+    }
   }
   const fin = ()=>{
-    navigation.navigate('AuthOptions')
+    //navigation.navigate('AuthOptions')
   }
   const updateScrollX = (e: { nativeEvent: { contentOffset: { x: any; }; }; }) => {
     const scrollX = e.nativeEvent.contentOffset.x;
@@ -121,7 +123,7 @@ const OnBoardingScreen = ({navigation}) => {
           <Slide item={item}/>
         )}
         />
-        <TouchableOpacity style={{position: 'absolute', top: 55,left: 360}} onPress={skip2}>
+        <TouchableOpacity style={{position: 'absolute', top: 55,left: '85%'}} onPress={skip2}>
         <Text style={styles.skip}>Skip</Text>
         </TouchableOpacity>
 

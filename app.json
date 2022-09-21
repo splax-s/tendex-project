@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "tendex-project",
+    "owner": "tendex",
     "slug": "tendex-project",
     "version": "1.0.0",
     "orientation": "portrait",

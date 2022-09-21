@@ -1,5 +1,4 @@
 import splax from './announcement'
-console.log(splax)
 export default [
     {
         id: "1",

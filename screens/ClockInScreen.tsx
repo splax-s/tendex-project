@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
         marginLeft: 'auto',
         flexDirection: 'row',
         alignItems: 'center',
-        marginTop: 60,
+        marginTop: 40,
       },
       uwu:{
         flexDirection: 'row',

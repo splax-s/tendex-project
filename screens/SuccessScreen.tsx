@@ -8,7 +8,7 @@ const SuccessScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.cont}>
-            <Text style={styles.text}>Attendace Recorded</Text>
+            <Text style={styles.text}>Attendance Recorded</Text>
         </View>
         <View style={{alignItems: 'center', paddingVertical: "60%"}}>
         <Logo/>

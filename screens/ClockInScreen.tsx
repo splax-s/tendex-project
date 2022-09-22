@@ -28,7 +28,7 @@ const ClockInScreen = ({navigation, route}) => {
         setLoading(true);
         setTimeout(() => {
 
-            navigation.navigate('Success')
+            navigation.navigate('Failure')
             setLoading(false);
         }, 3000)
     }
